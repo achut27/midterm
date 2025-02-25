@@ -1,0 +1,42 @@
+/* Basic reset or custom styles if needed */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444; 
+    padding: 1rem;
+  }
+  
+  .left-section ul,
+  .right-section ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .left-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .left-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Right section with buttons */
+  .right-section button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* You can style the Contact Me button similarly, or differently if you prefer */
+  

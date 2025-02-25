@@ -1,0 +1,85 @@
+body.light-mode {
+    background-color: #f5f5f5;
+    color: #000;
+  }
+  
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Grid container styles */
+  .grid-container {
+    display: grid;
+    /* 2 rows, 2 columns => but we want each row to have 1/3 and 2/3 columns */
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto; /* 2 rows */
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  /* FIRST ROW: 
+     .calc-description => top-left
+     .calc-input       => top-right
+  */
+  .calc-description {
+    grid-column: 1 / 2; /* left column */
+    grid-row: 1 / 2;    /* first row */
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  
+  .calc-input {
+    grid-column: 2 / 3; /* right column */
+    grid-row: 1 / 2;    /* first row */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .calc-input input {
+    width: 90%; 
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  
+  /* SECOND ROW:
+     .calc-button => bottom-left
+     .calc-screen => bottom-right
+  */
+  .calc-button {
+    grid-column: 1 / 2; /* left column */
+    grid-row: 2 / 3;    /* second row */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+  }
+  
+  .calc-button button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .calc-screen {
+    grid-column: 2 / 3; /* right column */
+    grid-row: 2 / 3;    /* second row */
+    background-color: #332703; /* as specified */
+    color: #fff; /* text color to contrast the background */
+    font-size: 2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4rem; /* just to give some height */
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #444;
+    color: #fff;
+  }
+  

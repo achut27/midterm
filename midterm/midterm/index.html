@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+ 
+  <title>Midterm</title>
+  <!-- Link to CSS files -->
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/grid.css" />
+</head>
+<body class="light-mode"> <!-- Default to light mode -->
+  <header>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <!-- Left Section: Three Links -->
+      <div class="left-section">
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">HTML5</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a></li>
+        </ul>
+      </div>
+      <!-- Right Section: Three Buttons -->
+      <div class="right-section">
+        <!-- Dark Mode Button -->
+        <button data-bs-theme-value="dark" onclick="setDarkMode()">Dark</button>
+        <!-- Light Mode Button -->
+        <button data-bs-theme-value="light" onclick="setLightMode()">Light</button>
+        <!-- Contact Me Button (no action) -->
+        <button>Contact Me</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- GRID CONTAINER -->
+    <div class="grid-container">
+      <!-- FIRST ROW -->
+      <!-- Left Column (1/3 width) -->
+      <div class="calc-description">
+        <p>
+          Factorial calculator.<br>
+          n! = 1x2x3 … xn.<br>
+          e.g. 5! = 120.
+        </p>
+      </div>
+      <!-- Right Column (2/3 width) -->
+      <div class="calc-input">
+        <input 
+          type="number" 
+          id="factorialInput" 
+          placeholder="Enter a number" 
+        />
+      </div>
+
+      <!-- SECOND ROW -->
+      <!-- Left Column (1/3 width) -->
+      <div class="calc-button">
+        <button id="enterBtn" onclick="calculateFactorial()">Enter</button>
+      </div>
+      <!-- Right Column (2/3 width) -->
+      <div class="calc-screen" id="resultScreen">
+        <!-- This will display the factorial result -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Simple factorial calculator © 2025</p>
+  </footer>
+
+  <!-- Link to JavaScript file -->
+  <script src="js/darkmodetoggle.js"></script>
+</body>
+</html>
